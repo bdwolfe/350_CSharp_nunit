@@ -20,5 +20,13 @@ namespace Prime.UnitTests.Services
 
             Assert.IsFalse(result, "1 should not be prime");
         }
+
+        [Test]
+        public void ReturnTrueGivenValueOf2()
+        {
+            var result = _primeService.IsPrime(2);
+
+            Assert.IsTrue(result, "2 should be prime");
+        }
     }
 }
